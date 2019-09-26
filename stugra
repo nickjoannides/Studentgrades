@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+
+class StudentGrades
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner scan = new Scanner(Scanner.in);
+		double grade;
+		double total;
+		int gradeCounter;
+		int exit;
+		String letterGrade;
+	
+		
+		System.outprintln("Welcome to the Gradebook for CSC150 Intro to Computer Science");
+		
+		While (exit != -1); {
+			System.out.println("Enter grade or -1 to quit:");
+			grade = input.nextDouble();
+			gradeCounter++;
+			total += grade;
+			exit = input.nextInt();
+		}
+		double avg = total/gradeCounter;
+		//following is figuring out avg letter grade. maybe use break instead
+		if(avg>=92.5)
+        {
+           letterGrade = "A";
+        }
+        
+        else if(avg>=89.4 && avg<92.4)
+        {
+           letterGrade = "A-"";
+        }
+        else if(avg>=86.4 && avg<89.4)
+        {
+            letterGrade = "B+";
+        }
+        else if(avg>=82.4 && avg<86.4) 
+        {
+        	letterGrade = "B";
+        }
+        else if(avg>=79.4 && avg<82.4)
+        {
+        	letterGrade = "B-";
+        }
+        else if(avg>=76.4 && avg<79.4)
+        {
+        	letterGrade = "C+";
+        }
+        else if(avg>=72.4 && avg<76.4)
+        {
+        	letterGrade = "C";
+        }
+    	else if(avg>=69.4 && avg<72.4)
+    	{
+        	letterGrade = "C-";
+        }
+        else if(avg>=66.4 && avg<69.4)
+        {
+        	letterGrade = "D+";
+        }
+        else if(avg>=62.4 && avg<66.4)
+        {
+        	letterGrade = "D";
+        }
+        else if(avg>=59.4 && avg<62.4)
+        {
+        	letterGrade = "D-";
+        }
+        else  {
+        	letterGrade = "F";
+        }
+		System.out.println("Average grade is: " + avg);
+		System.out.println("Letter Grade is %s", letterGrade);
+	}
+}
